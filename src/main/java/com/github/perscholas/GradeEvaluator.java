@@ -31,7 +31,7 @@ public class GradeEvaluator {
     }
 
     public Boolean isGradeD(Double score) {
-        if (score <= 69 && score >= 60) {
+        if (score <= 69 && score >= 65) {
             return true;
         } else {
             return false;
@@ -39,18 +39,29 @@ public class GradeEvaluator {
     }
 
     public Boolean isGradeF(Double score) {
-        if (score <= 59){
+        if (score <= 64){
             return true;
-    }else
-
-    {
+    }else {
         return false;
     }
 
 }
-    public Character getGrade(Double score) {
-        if(isGradeA) {
-            return String "A";
-        }else if (isGradeB(true))
-    }
-}
+   public Character getGrade(Double score) {
+        if(score <= 100 && score >=90)
+        {
+          return 'A';
+        }
+        if(score <= 89 && score >=80)
+        {
+            return 'B';
+        }
+        if(score <= 79 && score >=70)
+        {
+            return 'C';
+        }
+        if(score <= 69 && score >=65)
+        {
+            return 'D';
+        }else{return 'F';}
+
+   } }
